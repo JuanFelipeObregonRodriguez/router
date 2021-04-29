@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Inicio from './components/Inicio';
+import Base from './components/Base';
 import {
-  BroweserRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -9,11 +11,21 @@ import {
  function App() {
   return (
     <Router>
+      <Link to="/inicio">inicio</Link>
+      <Link to="/">base</Link>
+
+
+
      <Switch>
-       <Route></Route>
+       <Route exact path="/inicio">
+         <Inicio></Inicio>
+       </Route>
+       <Route exact path ="/">
+        <Base></Base>
+       </Route>
      </Switch>
 
     </Router>
-  )
+  );
 }
 export default App;
