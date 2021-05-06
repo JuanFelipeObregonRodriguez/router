@@ -17,7 +17,7 @@ import {
 
 
      <Switch>
-       <Route exact path="/inicio">
+       <Route exact path="/inicio/:nombre/:edad/:apellido">
          <Inicio></Inicio>
        </Route>
        <Route exact path ="/">
